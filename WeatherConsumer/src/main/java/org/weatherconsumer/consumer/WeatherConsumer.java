@@ -2,6 +2,7 @@ package org.weatherconsumer.consumer;
 
 import org.springframework.stereotype.Component;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.weatherproducer.producer.WeatherEvent;
 
 @Component
 public class WeatherConsumer {

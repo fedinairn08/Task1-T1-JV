@@ -1,22 +1,37 @@
 package org.weatherconsumer.consumer;
 
+import lombok.Getter;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Getter
 public class WeatherStats {
 
     private int totalEvents;
+
     private final Map<String, Integer> sunnyDays = new HashMap<>();
+
     private final Map<String, Integer> rainyDays = new HashMap<>();
+
     private final Map<String, Double> avgTemperatures = new HashMap<>();
+
     private final Map<String, Integer> cityEventCount = new HashMap<>();
+
     private int maxRainyDays = 0;
+
     private String maxRainyCity = "";
+
     private int maxSunnyDays = 0;
+
     private String maxSunnyCity = "";
+
     private int maxTemperature = Integer.MIN_VALUE;
+
     private String hottestCity = "";
+
     private int minTemperature = Integer.MAX_VALUE;
+
     private String coldestCity = "";
 
     public void updateStats(String city, int temperature, String condition) {

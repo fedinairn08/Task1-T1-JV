@@ -12,11 +12,15 @@ import java.util.Random;
 public class WeatherProducer {
 
     private static final String TOPIC = "weather-topic";
+
     private final KafkaTemplate<String, WeatherEvent> kafkaTemplate;
+
     private final Random random = new Random();
+
     private final List<String> cities = List.of(
             "Москва", "Санкт-Петербург", "Рязань", "Тула", "Нижний Новгород"
     );
+
     private final List<String> conditions = List.of(
             "солнечно", "облачно", "дождь"
     );
