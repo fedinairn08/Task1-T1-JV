@@ -1,1 +1,4 @@
 rootProject.name = 'task1'
+
+include 'WeatherConsumer'
+include 'WeatherProducer'
